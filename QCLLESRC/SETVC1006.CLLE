@@ -1,0 +1,39 @@
+/*---<CREATE_OBJECTS>---------------------------------------------------------*/
+/*                                                                            */
+/*    @create{                                                                */
+/*             CRTBNDCL  PGM(&O/&N)                                           */
+/*                       SRCFILE(&L/&F)                                       */
+/*                       SRCMBR(&N)                                           */
+/*                       DFTACTGRP(*NO)                                       */
+/*                       ACTGRP(*NEW)                                         */
+/*                       OPTION(*EVENTF)                                      */
+/*                       DBGVIEW(*SOURCE)                                     */
+/*                       USRPRF(*USER)                                        */
+/*            }                                                               */
+/*                                                                            */
+/*---</CREATE_OBJECTS>--------------------------------------------------------*/
+
+ SETVCENV:    PGM
+
+             /* Deklarationen: 1. Parameter Variablen */
+
+             /* Deklarationen: 2. Programm Variablen */
+
+             /* Deklarationen: 3. Dateien */
+
+
+             /* Logik: Mainline  */
+
+             CHGCURLIB  CURLIB(VC20251006)
+             MONMSG     MSGID(CPF0000)
+
+             ADDLIBLE   LIB(VCWWSDAT) POSITION(*AFTER WWDAT)
+             MONMSG     MSGID(CPF0000)
+
+             RETURN
+
+             /* Logik: Subroutinen  */
+
+
+
+             ENDPGM
