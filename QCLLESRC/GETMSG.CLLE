@@ -21,7 +21,6 @@ GETMSG:     PGM        PARM(&MSGID &LIB &MSGF &MSGTEXT)
 
 
              /* Kommentar 01 */
-             /* xxx */
 
              RTVMSG     MSGID(&MSGID) MSGF(&LIB/&MSGF) MSG(&MSGTEXT)
              MONMSG     MSGID(CPF0000) EXEC(DO)
